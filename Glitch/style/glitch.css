@@ -1,0 +1,186 @@
+body {
+    font-family: Helvetica,Sans-serif;
+    size: 1Opx;
+    background-color: rgb(214, 213, 213);
+}
+.pTitre {
+    background-image: url(../image_glitch/menu.png);
+    background-repeat: no-repeat;
+    vertical-align: center;
+    margin-bottom: -30px;
+  }
+.pTitre h3 {
+    margin: 20px 20px 5px 10px;
+    padding-top: 15px;
+    text-align: center;
+}
+.pTitre p {
+    font-size: 15px;
+    margin-top: 0em;
+    padding-left: 15px ;
+    padding-right: 20px;
+    line-height : 1.4;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+.listFrame p {
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 5px;
+}
+.container {
+    margin-top: 20px;
+}
+.listFrame span p {
+    margin-left: 5px;
+}
+.listFrame span button {
+    margin-left: 10px;
+}
+.pReact, .pNuxt, .pVue, .pAngular, .pSvelte, .pVue {
+    height: 130px;
+}
+.pSlack, .pTrello, .pAFrame, .pSpotify, .pMaterial, .pTwitchDev {
+    padding-top: 10px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.fakeCol1 {
+    height: 150px;
+}
+.pSlack {
+    background-color: rgb(249, 214, 198) ;
+    border-radius: 2% 2%;
+}
+.pTrello {
+    background-color:  rgb(221, 229, 233);
+    border-radius: 2% 2% ;
+}
+.pAFrame {
+    background-color:  rgb(170, 214, 251);
+    border-radius: 2% 2%;
+}
+.pSpotify {
+    background-color: rgb(211, 243, 230);
+    border-radius: 2% 2%;
+}
+.pMaterial {
+    background-color:   rgb(184, 235, 230);
+    border-radius: 2% 2%;
+}
+.pTwitchDev {
+    background-color:  rgb(238, 236, 251);
+    border-radius: 2% 2% ;
+}
+span> img {
+    width:50px;
+    height: 50px;
+    float: left;
+}
+button {
+    /* margin: 5px 5px 0 0; */
+    border: solid 2px black;
+    border-radius: 10px;
+}
+div > p {
+    margin-top: 10px;
+}
+.inspiration {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.inspiration > p {
+    text-align: center;
+}
+div a img {
+    width: 50px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+div a p {
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.pGames, .pBots, .pMusic, .pArt, .pProductivity, .pHardware, .pBuildingBlock, .pLearnCode {
+    height: 100px;
+    text-decoration: none;    
+    box-sizing: border-box;
+    display: flex-box;
+    justify-content: space-around;
+    /* margin-right: 5px; */
+    border-radius: 7px;
+}
+.pGames {
+    background-color: #FBA058;
+}
+.pBots {
+    background-color: #c7bff0;
+}
+.pMusic {
+    background-color: #a9c4f7;
+}
+.pArt {
+    background-color: #f2a7bb;
+}
+.pProductivity {
+    background-color: #7aa4d3;
+}
+.pHardware {
+    background-color: #6cd8a9;
+}
+.pBuildingBlock {
+    background-color: #65cad2;
+}
+.pLearnCode {
+    background-color: #f8d3c8;
+}
+.fake {
+    display: none;
+}
+.fakeCol1 {
+    display: none;
+}
+footer {
+    margin-top: 40px;
+    border-top: solid 2px rgba(216, 213, 213, 0.849);
+}
+.pFooter h3 {
+    font-size: 18px;
+}
+.pFooter ul li {
+    list-style: none;
+    margin-left: -35px;
+    
+}
+.pSocial ul li {
+    text-decoration: none;
+    color: black !important;
+}
+@media (min-width: 768px) and (max-width: 992px ){
+
+    .pAFrame , .pMaterial {
+        display: none;
+    }
+    .fake {
+        display: block;
+    }
+    .pFramework {
+        visibility: hidden;
+    }
+    .pVue, .pAngular, .pSvelte {
+        display: none;
+    }
+    .fakeCol1 {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 575px) {
+    .pGames, .pBots, .pMusic, .pArt, .pProductivity, .pHardware, .pBuildingBlock, .pLearnCode {
+        width: 400px;
+    }   
+}

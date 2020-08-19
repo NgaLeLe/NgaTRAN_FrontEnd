@@ -1,0 +1,232 @@
+body {
+    font-family: Helvetica,Sans-serif;
+    background-color: rgb(247, 243, 243);
+    margin: 30px 30px  ;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: stretch;
+    grid-gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+.pTitre {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    background-image: url(../grid_glitch/images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: stretch;
+}
+.pTitre p {
+   padding-top: 20px;
+}
+.createFramework div{
+    box-shadow: 5px 5px 5px rgb(230, 226, 226);
+}
+.pReact {
+    grid-column: 2;
+    grid-row: 1;
+}
+.pNuxt {
+    grid-column: 3;
+    grid-row: 1;
+}
+.pVue {
+    grid-column: 4;
+    grid-row: 1;
+}
+.pAngular {
+    grid-column: 2;
+    grid-row: 2;
+}
+.pSvelte {
+    grid-column: 3;
+    grid-row: 2;
+}
+.pEmber {
+    grid-column: 4;
+    grid-row: 2;
+}
+.pSlack {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgb(249, 214, 198) ;
+    border-radius: 1% 1%  rgb(249, 214, 198);
+}
+.createFramework div button {
+    margin-left: 45px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.pTrello {
+    grid-column: 3;
+    grid-row: 1;
+    background-color:  rgb(221, 229, 233);
+    border-radius: 2px 2px rgb(221, 229, 233);
+}
+.pAFrame {
+    grid-column: 4;
+    grid-row: 1;
+    background-color:  rgb(170, 214, 251);
+    border-radius: 2px 2px rgb(170, 214, 251);
+}
+.pSpotify {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgb(211, 243, 230);
+    border-radius: 2px 2px rgb(211, 243, 230);
+}
+.pMaterial {
+    grid-column: 3;
+    grid-row: 2;
+    background-color:   rgb(184, 235, 230);
+    border-radius: 2px 2px rgb(184, 235, 230);
+}
+.pTwitchDev {
+    grid-column: 4;
+    grid-row:  2;
+    background-color:  rgb(238, 236, 251);
+    border-radius: 2px 2px rgb(238, 236, 251);
+}
+
+.pTitre h3 {
+    margin: 20px 20px 0 0;
+    padding-top: 15px;
+    text-align: center;
+}
+.pTitre p {
+    font-size: 15px;
+    margin-top: 0em;
+    padding-left: 15px ;
+    padding-right: 20px;
+    line-height : 1.4;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+div > span {
+    display: inline;
+}
+img {
+    align-self: top;
+    width: 35px;
+    margin: 7px;
+    float: left;
+}
+.btItems {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: ivory;
+    border: solid 2px black;
+    border-radius: 3px 3px;
+    padding: 5px ;
+    margin-top: 10px;
+}
+.contentFramework {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-right: 5px;
+    line-height : 1.4;
+    letter-spacing: 0.08em;
+}
+
+@media  (max-width:1200px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .createFramework .pTitre {
+        grid-row: 1 / 4;
+    }
+    .pAFrame, .pVue {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .pSpotify, .pAngular {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .pMaterial, .pSvelte {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .pTwitchDev, .pEmber {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+}
+ @media  (max-width:800px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        /* height: auto; */
+        grid-row: 180px;
+    }
+    .pTrello, .pNuxt {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .pAFrame, .pVue {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .pSpotify, .pAngular {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .pMaterial, .pSvelte {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .pTwitchDev, .pEmber {
+        grid-column: 2;
+        grid-row: 4;
+    } 
+} 
+@media  (max-width:592px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: repeat(7, 1fr);
+        justify-content: center;
+        grid-row: inherit;
+    }
+    .wrapper div {
+        grid-column: 1;
+        height: 130px;
+    }
+    .createFramework div { /*chaque framwork a l'hauteur 100px*/
+        height: 100px;
+    }
+    .pTitre {
+        grid-row: 1;
+        height: min-content;
+    }
+    .pTitre h3 {
+        margin-top: 5px;
+    }
+    .pSlack, .pReact {
+        grid-row: 2;
+    }
+    .pTrello, .pNuxt {
+        grid-row: 3;
+    }
+    .pAFrame, .pVue {
+        grid-row: 4;
+    }
+    .pSpotify, .pAngular {
+        grid-row: 5;
+    }
+    .pMaterial, .pSvelte {
+        grid-row: 6;
+    }
+    .pTwitchDev, .pEmber {
+        grid-row: 7;
+    }
+} 

@@ -1,0 +1,284 @@
+a .fa:hover {
+    color: white;
+}
+/* partir evaluer des services */
+.evaluerService {
+    height: 100px;
+    border-top: solid 2px rgb(204, 200, 200);
+    border-bottom: solid 2px rgb(204, 200, 200);
+    box-shadow: gray;
+    padding-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.evaluerService a {
+    text-decoration: none;
+    color: grey;
+}
+.evaluerService a :hover {
+    color: yellowgreen
+}
+.choiceConvertir {
+    margin-top: 40px;
+}
+.header_choice {
+    color: rgb(173, 170, 170);
+    padding-left: 10px;
+}
+
+  div > ul >li {
+    text-decoration: none;
+    list-style: none; 
+    font-size: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;   
+    padding-left: 0;
+    margin-left: -25px;
+}
+li span {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+li a {
+    color: rgb(20, 20, 20);
+}
+.convert1 span {
+    color: rgba(231, 83, 83, 0.959);
+}
+.convert1 li:hover {
+    background: rgba(231, 83, 83, 0.959);
+    border-radius: 5px;
+}
+.convert2 span {
+    color: rgba(172, 83, 231, 0.959);
+}
+.convert2 li:hover {
+    background: rgba(172, 83, 231, 0.959);
+    border-radius: 5px;
+}
+.convert3 span {
+    color: rgba(83, 231, 224, 0.959);
+}
+.convert3 li:hover {
+    background: rgba(83, 231, 224, 0.959);
+    border-radius: 5px;
+}
+ul .toWord span{
+    color: rgba(83, 164, 231, 0.959);
+}
+ul .toWord:hover {
+    background: rgba(83, 164, 231, 0.959);
+    border-radius: 5px;
+}
+ul .toExcel span{
+    color: rgba(105, 231, 83, 0.959);
+}
+ul .toExcel:hover {
+    background: rgba(105, 231, 83, 0.959);
+    border-radius: 5px;
+}
+ul .toPpt span{
+    color: rgba(231, 150, 83, 0.959);
+}
+ul .toPpt:hover {
+    background: rgba(231, 150, 83, 0.959);
+    border-radius: 5px;
+}
+ul .toJpeg span{
+    color: rgba(231, 221, 83, 0.959);
+}
+ul .toJpeg:hover {
+    background: rgba(231, 221, 83, 0.959);
+    border-radius: 5px;
+}
+ul .signer span {
+    color: rgba(236, 127, 213, 0.959);
+}
+ul .signer:hover {
+    background: rgba(236, 127, 213, 0.959);
+    border-radius: 5px;
+}
+ul .deverrouiller span {
+    color: rgba(214, 101, 154, 0.959);
+}
+ul .deverrouiller:hover {
+    background: rgba(214, 101, 154, 0.959);
+    border-radius: 5px;
+}
+ul .proteger span {
+    color: rgba(226, 69, 95, 0.959);
+}
+ul .proteger:hover {
+    background: rgba(226, 69, 95, 0.959);
+    border-radius: 5px;
+}
+ /*gerer grid 6 partir des choices de convertir  */
+.choiceConvertir {
+ display: grid;
+ grid-template-columns: repeat(6,1fr);
+ grid-gap: 5px;   
+}
+.convert1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+.convert2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+.convert3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+.convert4 {
+    grid-column: 4;
+    grid-row: 1;
+}
+.convert5 {
+    grid-column: 5;
+    grid-row: 1;
+}
+.convert6 {
+    grid-column: 6;
+    grid-row: 1;
+}
+.choiceConvertir-sm { 
+    display: none;
+} 
+/* footer */
+footer {
+    margin-top: 30px;
+    border-top: thistle solid 1px;
+    padding-top: 20px;
+}
+.listFooterContact {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 5px;
+}
+.l1Contact {
+    grid-column: 1;
+    grid-row: 1;
+}
+.l2Propos {
+    grid-column: 2;
+    grid-row: 1;
+}
+.l3Offres {
+    grid-column: 3;
+    grid-row: 1;
+}
+.l4Condition {
+    grid-column: 4;
+    grid-row: 1;
+}
+.nFooter {
+    margin-top: 20px;
+    margin-left: 0; 
+    margin-right: 0;
+    /* display: block; */
+}
+.pFooterLeft span{
+    margin-left: 0;
+    font-size: 13px;
+    color: rgb(168, 162, 162);
+}
+.pLangague a, .pSocial a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+}
+.pLangague i {
+    color: black;
+}
+.pSocial a:hover {
+    color: rgba(1, 1, 206, 0.863);
+}
+@media (max-width: 1000px) {
+    .choiceConvertir {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 5px;   
+    }
+       .convert1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .convert2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .convert3 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .convert4 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .convert5 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .convert6 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    
+    .listFooterContact {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 5px;
+    }
+    .l1Contact {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .l2Propos {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .l3Offres {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .l4Condition {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+@media (max-width: 768px) {
+    .choiceConvertir {
+        display: none;
+    }
+    .choiceConvertir-sm {
+        display: block;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .nFooter {
+        display: flex;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .pFooterLeft {
+        order: 3;
+    }
+    .pLangague {
+        order: 1;
+    }
+    .Social {
+        order : 2;
+    }
+    .evaluerService {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        height: auto;
+        vertical-align: middle;
+    }   
+}

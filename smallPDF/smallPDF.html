@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fusionner PDF - Combiner en ligne</title>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- librairie pour popover menu-context -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/smallPDF.css">
+    <link rel="stylesheet" href="styles/partChoice.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-md navbar-light bg-light ">
+            <a class="navbar-brand" href="#">
+                <img src="images/logoSmall.png" alt="smallPDF">
+            </a>
+            <button class="menuCollapse navbar-toggler " type="button" data-toggle="collapse" 
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar menuDropConvert">
+                <a class="nav-link btDropdownMenu" href="#choiceConvert">
+                    <img src="images/lgMenu.png" > Outils
+                </a>
+            </div>  
+          <div class=" collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navMenu">
+                
+                <li class="nav-item itNav nav1">
+                  <a class="nav-link" href="#">Compresser</a>
+                </li>
+                <li class="nav-item itNav nav2">
+                  <a class="nav-link" href="#">Convertir</a>
+                </li>
+                <li class="nav-item itNav nav3">
+                  <a class="nav-link " href="#">Fusionner</a>
+                </li>
+                <li class="nav-item itNav nav4">
+                    <a class="nav-link" href="#">Modifier</a>
+                  </li>
+                  <li class="nav-item itNav nav5">
+                    <a class="nav-link " href="#">Signer</a>
+                  </li>
+              </ul>
+                <ul class="espaceMembre nav navbar  navbar-right">
+                     <li class="mTarif">
+                         <a class="nav-link" href="#">Tarif</a>
+                        <div></div>
+                        </li>   
+                     <li class="mSeConnecter">
+                        <a class="nav-link" href="#">Se connecter</a>
+                    </li>
+                    <li class="mSInscrire"><a class="nav-link" href="#"> S'inscrire</a></li> 
+                    <li class="mEssayer">
+                        <a class="nav-link" href="#">
+                            <button type="button" class="btn btn-primary mt-0">Essai gratuit</button></a>
+                    </li>
+                 </ul>
+            </div>
+         
+        </nav>
+    </header>
+    <!-- main contenue -->
+    <div class="mainContent">
+        <div class="titlePage ">
+            <h3><img src="images/iTitle.png" > Fusionner PDF</h3>
+            <p>Le plus simple pour fusionner vos fichiers PDF</p>
+        </div>
+        <div class="contentPartie ">
+            <!-- box violet -->
+            <div class="choisi_depose_fichier ">
+                <div class="inner_choisi">
+                    <div class="choisi1">
+                        <a href="#"><img src="images/iPDF.png" style="width: 60px;"></a>
+                    </div>
+                    <div class="btn-group choisi2 btn-lg" role="group" aria-label="Button group with nested dropdown">
+                        <button value="CHOISISSEZ LES FICHIERS" type="button" class="btn btn-light border-right" >
+                          <i class="fa fa-folder-open-o fa-fw"></i> CHOISISSEZ LES FICHIERS
+                        </button>
+                        <div class="btn-group" role="group">
+                          <button id="btnGroupChoisiSource" type="button" class="btn btn-light dropdown-toggle" 
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="btnGroupChoisiSource">
+                            <a class="dropdown-item" href="#"><i class="fa fa-folder-o fa-fw"></i> Depuis l'appareil</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-dropbox fa-fw"></i> Depuis DropBox</a>
+                            <a class="dropdown-item" href="#"><i class="fa fa-google fa-fw"></i>Depuis Google Drive</a>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="choisi3">
+                        <a href="#">ou déposer les fichiers PDF ici</a>
+                    </div>
+                </div>
+            </div>
+            <!-- partie les sevices/ avantages de small -->
+            <div class="listeService">
+                <div class="service1">
+                    <img src="images/lamp.png">
+                    <h6>Comment fusionner les fichiers PDF</h6>
+                    <p class="serviceDetail">Glissez et déposez un ou plusieurs fichiers PDF ci-dessus. Dès que les pages sont visibles vous pouvez les modifier. Enfin appuyez sur le bouton au bas et téléchargez le PDF.</p>
+                </div>
+                <div class="service2">
+                    <img src="images/medaille.png">
+                    <h6>Fusion en ligne des PDF sécurisée</h6>
+                    <p class="serviceDetail">
+                        Tous les fichiers chargés et créés sur nos serveurs sont effacés définitivement après une heure. Voir nos règles sur la confidentialité pour en savoir plus.</p>
+                </div>
+                <div class="service3">
+                    <img src="images/like.png">
+                    <h6> Pour Windows, Mac et Linux</h6>
+                    <p class="serviceDetail">
+                        L’appli web est pour navigateur. Elle fonctionne donc sur tous les systèmes d’exploitation dont Mac, Windows et Linux.</p>
+                </div>
+                <div class="service4">
+                    <img src="images/cadenat.png">
+                    <h6> Fusion de PDF facile avec aperçu</h6>
+                    <p class="serviceDetail">
+                        En glissant vos pages dans l’espace de l’éditeur vous pouvez les réorganiser ou supprimer des pages. Vous pouvez aussi ajouter plusieurs PDF pour les fusionner ensemble et les combiner en un seul document.</p>
+                </div>
+                <div class="service5">
+                    <img src="images/couteau.png">
+                    <h6> Un service fiable</h6>
+                    <p class="serviceDetail">
+                        Normalement, pour combiner des PDF ou pour ajouter une page à un PDF, vous devez acheter des logiciels très chers. Ce service en ligne est sûr et sécurisé.</p>
+                </div>
+                <div class="service6">
+                    <img src="images/upload.png">
+                    <h6>Elaboration dans le cloud</h6>
+                    <p class="serviceDetail">Nos serveurs dans le cloud gèrent la création des pdf pour vous dès que vous avez fusionné vos fichiers. Votre ordinateur n'est pas occupé.</p>
+                </div>
+            </div>
+            <!-- partie d'evaluer -->
+            <div class="evaluerService">
+                <div><strong> Évaluez cet outil </strong> &nbsp;</div>
+                <div> 
+                    <a href="#"> <i class="fa fa-star "></i></a>&nbsp;
+                    <a href="#"> <i class="fa fa-star "></i></a>&nbsp;
+                    <a href="#"> <i class="fa fa-star "></i></a>&nbsp;
+                    <a href="#"> <i class="fa fa-star "></i></a>&nbsp;
+                    <a href="#"> <i class="fa fa-star "></i></a>&nbsp;
+                </div>
+                <div>
+                    <strong> 4,8 </strong> / 5 - 495 558 votes
+                </div>
+            </div>
+            <!-- partir les choix de convertisse -->
+            <div class="choiceConvertir" id="choiceConvert">
+                <div class="convert1">
+                    <p class="header_choice">Convertir et compresser</p>
+                    <ul >
+                        <li >
+                            <a href="#" ><span class="fa fa-star-o fa-lg fa-fw "></span> &nbsp; Compresser PDF </a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-files-o fa-lg fa-fw"></span> &nbsp; Convertisseur PDF</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="convert2">
+                    <p class="header_choice">Diviser et fusionner</p>
+                    <ul >
+                        <li >
+                            <a href="#"><span class="fa fa-scissors fa-lg fa-fw"></span> &nbsp; Diviser PDF </a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-clone fa-lg fa-fw"></span> &nbsp; Fusionner PDF</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="convert3">
+                    <p class="header_choice">Voir et modifier</p>
+                    <ul >
+                        <li >
+                            <a href="#"><span class="fa fa-file-picture-o fa-lg fa-fw"></span> &nbsp; Modifier PDF </a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-file-text-o fa-fw"></span> &nbsp; Lecture PDF</a>
+                        </li>
+                        <li >
+                            <a href="#"><span class="fa fa-paper-plane-o  fa-lg fa-fw"></span> &nbsp; Partager un document </a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-file-text-o fa-fw"></span> &nbsp; Numérotez les pages </a>
+                        </li>
+                        <li >
+                            <a href="#"><span class="fa fa-trash-o fa-lg fa-fw"></span> &nbsp; Supprimer des pages PDF </a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="fa fa-undo fa-fw"></span> &nbsp; Rotation PDF</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="convert4">
+                    <p class="header_choice">Convertir depuis PDF</p>
+                    <ul >
+                        <li class="toWord">
+                            <a href="#"><span class="fa fa-file-text-o fa-lg fa-fw"></span> &nbsp; PDF en Word </a>
+                        </li>
+                        <li class="toExcel">
+                            <a href="#"><span class="fa fa-file-excel-o fa-lg fa-fw"></span> &nbsp; PDF en Excel</a>
+                        </li>
+                        <li class="toPpt">
+                            <a href="#"><span class="fa fa-file-powerpoint-o  fa-lg fa-fw"></span> &nbsp; PDF en PPT </a>
+                        </li>
+                        <li class="toJpeg"> 
+                            <a href="#"><span class="fa fa-file-picture-o fa-lg fa-fw"></span> &nbsp; PDF en JPEG </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="convert5">
+                    <p class="header_choice">Convertir en PDF</p>
+                    <ul >
+                        <li class="toWord">
+                            <a href="#"><span class="fa fa-file-text fa-lg fa-fw"></span> &nbsp; Word en PDF </a>
+                        </li>
+                        <li class="toExcel">
+                            <a href="#"><span class="fa fa-file-excel-o fa-lg fa-fw"></span> &nbsp; Excel en PDF</a>
+                        </li>
+                        <li class="toPpt">
+                            <a href="#"><span class="fa fa-file-powerpoint-o  fa-lg fa-fw"></span> &nbsp; PPT en PDF </a>
+                        </li>
+                        <li class="toJpeg">
+                            <a href="#"><span class="fa fa-file-picture-o fa-lg fa-fw"></span> &nbsp; JPEG en PDF </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="convert6">
+                    <p class="header_choice">Signer et Sécurité </p>
+                    <ul >
+                        <li class="signer">
+                            <a href="#"><span class="fa fa-file-code-o fa-lg fa-fw"></span> &nbsp; Signer un PDF </a>
+                        </li>
+                        <li class="deverrouiller">
+                            <a href="#"><span class="fa fa-unlock fa-lg fa-fw"></span> &nbsp; Déverrouiller PDF</a>
+                        </li>
+                        <li class="proteger">
+                            <a href="#"><span class="fa fa-id-badge  fa-lg fa-fw"></span> &nbsp; Protéger un PDF </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <!-- partie colllapse pour liste de choix de convertir qui va apparaitre si l'ecran éteigne small -->
+                <div class="choiceConvertir-sm">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingConvertCompress">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseConvertCompress" aria-expanded="true" aria-controls="collapseOne">
+                                    Convertir et Compresser
+                                </button>
+                                </h5>
+                            </div>
+                        
+                            <div id="collapseConvertCompress" class="collapse " aria-labelledby="headingConvertCompress" data-parent="#accordion">
+                                <div class="card-body convert1">
+                                    <ul >
+                                        <li >
+                                            <a href="#"><span class="fa fa-star-o fa-lg fa-fw"></span> &nbsp; Compresser PDF </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="fa fa-files-o fa-lg fa-fw"></span> &nbsp; Convertisseur PDF</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingDiviFusion">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDiviFusion" aria-expanded="true" aria-controls="collapseOne">
+                                    Diviser et Fusionner
+                                </button>
+                                </h5>
+                            </div>
+                        
+                            <div id="collapseDiviFusion" class="collapse " aria-labelledby="headingDiviFusion" data-parent="#accordion">
+                                <div class="card-body convert2">
+                                    <ul >
+                                        <li >
+                                            <a href="#"><span class="fa fa-scissors fa-lg fa-fw"></span> &nbsp; Diviser PDF </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="fa fa-clone fa-lg fa-fw"></span> &nbsp; Fusionner PDF</a>
+                                        </li>
+                                    </ul>           
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingVoirModi">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseVoirModi" aria-expanded="true" aria-controls="collapseOne">
+                                    Voir et Modifier
+                                </button>
+                                </h5>
+                            </div>
+                        
+                            <div id="collapseVoirModi" class="collapse" aria-labelledby="headingVoirModi" data-parent="#accordion">
+                                <div class="card-body convert3">
+                                    <ul >
+                                        <li >
+                                            <a href="#"><span class="fa fa-file-picture-o fa-lg fa-fw"></span> &nbsp; Modifier PDF </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="fa fa-file-text-o fa-fw"></span> &nbsp; Lecture PDF</a>
+                                        </li>
+                                        <li >
+                                            <a href="#"><span class="fa fa-paper-plane-o  fa-lg fa-fw"></span> &nbsp; Partager un document </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="fa fa-file-text-o fa-fw"></span> &nbsp; Numérotez les pages </a>
+                                        </li>
+                                        <li >
+                                            <a href="#"><span class="fa fa-trash-o fa-lg fa-fw"></span> &nbsp; Supprimer des pages PDF </a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><span class="fa fa-undo fa-fw"></span> &nbsp; Rotation PDF</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingDepuisPDF">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseDepuisPDF" aria-expanded="true" aria-controls="collapseOne">
+                                    Convertir depuis PDF
+                                </button>
+                                </h5>
+                            </div>
+                        
+                            <div id="collapseDepuisPDF" class="collapse" aria-labelledby="headingDepuisPDF" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul >
+                                        <li class="toWord">
+                                            <a href="#"><span class="fa fa-file-text-o fa-lg fa-fw"></span> &nbsp; PDF en Word </a>
+                                        </li>
+                                        <li class="toExcel">
+                                            <a href="#"><span class="fa fa-file-excel-o fa-lg fa-fw"></span> &nbsp; PDF en Excel</a>
+                                        </li>
+                                        <li class="toPpt">
+                                            <a href="#"><span class="fa fa-file-powerpoint-o  fa-lg fa-fw"></span> &nbsp; PDF en PPT </a>
+                                        </li>
+                                        <li class="toJpeg"> 
+                                            <a href="#"><span class="fa fa-file-picture-o fa-lg fa-fw"></span> &nbsp; PDF en JPEG </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFive">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                                    Convertir en PDF
+                                </button>
+                                </h5>
+                            </div>
+                        
+                            <div id="collapseFive" class="collapse " aria-labelledby="headingFive" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul >
+                                        <li class="toWord">
+                                            <a href="#"><span class="fa fa-file-text fa-lg fa-fw"></span> &nbsp; Word en PDF </a>
+                                        </li>
+                                        <li class="toExcel">
+                                            <a href="#"><span class="fa fa-file-excel-o fa-lg fa-fw"></span> &nbsp; Excel en PDF</a>
+                                        </li>
+                                        <li class="toPpt">
+                                            <a href="#"><span class="fa fa-file-powerpoint-o  fa-lg fa-fw"></span> &nbsp; PPT en PDF </a>
+                                        </li>
+                                        <li class="toJpeg">
+                                            <a href="#"><span class="fa fa-file-picture-o fa-lg fa-fw"></span> &nbsp; JPEG en PDF </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingSix">
+                                <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+                                    Signer et Sécurité 
+                                </button>
+                                </h5>
+                            </div>
+                        
+                            <div id="collapseSix" class="collapse " aria-labelledby="headingSix" data-parent="#accordion">
+                                <div class="card-body">
+                                    <ul >
+                                        <li class="signer">
+                                            <a href="#"><span class="fa fa-file-code-o fa-lg fa-fw"></span> &nbsp; Signer un PDF </a>
+                                        </li>
+                                        <li class="deverrouiller">
+                                            <a href="#"><span class="fa fa-unlock fa-lg fa-fw"></span> &nbsp; Déverrouiller PDF</a>
+                                        </li>
+                                        <li class="proteger">
+                                            <a href="#"><span class="fa fa-id-badge  fa-lg fa-fw"></span> &nbsp; Protéger un PDF </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div> 
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="listFooterContact">
+            <div class="l1Contact">
+                <ul>
+                    <li><a href="#">Tarif</a></li>
+                    <li><a href="#">Télécharger Smallpdf</a></li>
+                </ul>
+            </div>
+            <div class="l2Propos">
+                <ul>
+                    <li><a href="#">à propos</a></li>
+                    <li><a href="#">Aide</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="l3Offres">
+                <ul>
+                    <li><a href="#">Web Integration</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="l4Condition">
+                <ul>
+                    <li><a href="#">Confidentialité et conditions d'utilisation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nFooter container ">
+            <div class="row">
+                <div class="pFooterLeft col-md-8 col-12 justify-content-md-start text-center">
+                    <span><i class="fa fa-copyright fa-fw"></i> 
+                        2020 Smallpdf GmbH - Made with 
+                        <i class="fa fa-heart fa-fw" style="color: rgb(214, 59, 54);"></i>
+                         for the people of the internet.
+                    </span>
+                </div>
+                <div class="pLangague col-md-2 col-12 justify-content-md-end text-center ">
+                        <button value="English" type="button" class="btn btn-light">
+                            <i class="fa fa-global fa-fw" style="color: black;"></i>&nbsp;English
+                        </button>
+                </div>
+                <div class="pSocial col-md-2 col-12 justify-content-md-end text-center">
+                    <a href="#"><i class="fa fa-facebook fa-lg"></i></a> &nbsp;
+                    <a href="#"><i class="fa fa-twitter fa-lg"></i></a> &nbsp;
+                    <a href="#"><i class="fa fa-linkedin fa-lg"></i></a> &nbsp;
+                    <a href="#"><i class="fa fa-envelope fa-lg"></i></a> &nbsp;
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

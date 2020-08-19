@@ -1,0 +1,8 @@
+background : #f5f5f5
+slack: rgb(249, 214, 198)
+trello: rgb(221, 229, 233);
+aFrame: rgb(170, 214, 251);
+spotify: rgb(211, 243, 230)
+material:  rgb(184, 235, 230);
+twitch: rgb(238, 236, 251);
+font : Helvetica,Sans-serif;

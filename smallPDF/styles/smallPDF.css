@@ -1,0 +1,276 @@
+header {
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.navMenu {
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.btDropdownMenu {
+    background-color: rgb(227, 230, 230);
+    border-radius: 8px ;
+    padding: 5px;
+    vertical-align: top;
+}
+.navMenu > li {
+    color: black;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+.espaceMembre {
+    display: flex;
+}
+.espaceMembre li {
+    text-decoration: none;
+    /* margin-inline-start: 20px; */
+}
+.mSInscrire {
+    display: none;
+}
+.mTarif {
+    padding-right: 15px;
+    display: inline-flex;
+}
+.mTarif div {
+    /* display: inline; */
+    height: 30px;
+    width: 1px;
+    background-color:   rgb(193, 191, 196);
+}
+/*  */
+.mainContent {
+    margin: 20px;
+}
+.titlePage {
+    text-align: center;
+}
+.titlePage p {
+    font-size: 22px;
+}
+.contentPartie {
+        margin: 10px 20px 20px 10px;
+}
+.choisi_depose_fichier {
+    background-color: rgb(121, 97, 242);
+    height: 300px; 
+    padding: 5px;
+}
+ .inner_choisi {
+     margin: 15px;
+     border: dashed 2px rgb(77, 73, 73);
+     height: 270px;
+     /* position: relative; */
+}
+.choisi1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.choisi2 {
+    position: absolute;
+    padding-top: 20px;
+    margin-left: 30%;
+}
+.choisi3 {
+    text-align: center;
+    margin-top: 80px;
+}
+.choisi3 a {
+    text-decoration: none;
+    color: white;
+}
+/* list 6 services suivant de violet */
+h6{
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.serviceDetail {
+    font-size: 14px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.listeService {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+} 
+.listeService div {
+    margin: 20px;
+} 
+.listeService div img {
+    margin-left: 40%;
+    margin-right: auto;
+    width: 35px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}  
+.service1 {
+    grid-column: 1 ;
+    grid-row: 1;
+ }
+ .service2 {
+    grid-column: 2 ;
+    grid-row: 1;
+ }
+ .service3 {
+    grid-column: 3 ;
+    grid-row: 1;
+ }
+ .service4 {
+    grid-column: 1 ;
+    grid-row: 2;
+ }
+ .service5 {
+    grid-column: 2 ;
+    grid-row: 2;
+ }
+.service6 {
+    grid-column: 3 ;
+    grid-row: 2;
+ }
+
+
+@media (max-width:1040px) {
+    .nav5 {
+        display: none;
+    }
+}
+@media (max-width:1000px) {
+    .nav4 {
+        display: none;
+    }
+}
+@media (max-width:960px) {
+    .nav3 {
+        display: none;
+    }
+}
+@media (max-width:920px) {
+    .nav2 {
+        display: none;
+    }
+}
+@media (max-width:880px) {
+    .nav1 {
+        display: none;
+    }
+}
+
+@media  (max-width:768px){
+    .listeService {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .service1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .service2 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .service3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .service4 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .service5 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .service6 {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .espaceMembre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bolder;
+        font-size: ;
+    }
+    .mSInscrire {
+        display: block;        
+        order: 1;
+        background-color: blue;
+        border-radius: 5px;
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .mSeConnecter {
+        order: 2;
+        border: solid 1px gray;
+        border-radius: 5px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .mTarif {
+        order: 3;
+    }
+    .mTarif div {
+        display: none;
+    }
+    .mEssayer {
+        display: none;
+    }
+    .menuDropConvert {
+        float:  right;
+        margin-right: 100px;
+    }
+ .menuCollapse {
+     margin-right: 0;
+ }
+}
+
+@media  (max-width:576px){
+    .choisi2 {
+        margin-left: 5%;
+    }
+    .listeService {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .service1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .service2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .service3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .service4 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .service5 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .service6 {
+        grid-column: 1;
+        grid-row: 6;
+    }
+  
+}
