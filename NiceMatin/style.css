@@ -1,9 +1,11 @@
 /* navBar et header qui contient logo et link de social */
+
 .topHeader {
     width: 100%;
     margin: 0;
     padding: 0;
 }
+
 .navBar ul {
     list-style-type: none;
     height: 30px;
@@ -15,6 +17,7 @@
     background-color: white;
     /* position: sticky; */
 }
+
 .navBar ul li {
     display: inline;
     text-align: center;
@@ -22,6 +25,7 @@
     font-size: 14px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 .navBar ul li img {
     padding-right: 0;
     padding-left: 0;
@@ -29,6 +33,7 @@
     margin-right: 0;
     float: right;
 }
+
 .topHeader .headerLogo {
     width: 100%;
     height: 80px;
@@ -36,9 +41,13 @@
     padding: 0;
     margin: 0;
 }
-.headerLogo .logoNiceMatin, .headerLogo .dAbonnes, .headerLogo .btAbonnez{
+
+.headerLogo .logoNiceMatin,
+.headerLogo .dAbonnes,
+.headerLogo .btAbonnez {
     display: inline-flex;
 }
+
 .headerLogo .logoNiceMatin {
     color: white;
     font-size: 16px;
@@ -47,8 +56,9 @@
     font-weight: bold;
     margin-left: 35%;
 }
+
 .headerLogo .dAbonnes {
-    padding-top: 0px; 
+    padding-top: 0px;
     margin-top: 0;
     padding-left: 15px;
     padding-right: 15px;
@@ -58,10 +68,11 @@
     color: white;
     border-radius: 5px 5px;
 }
+
 .headerLogo .btAbonnez {
-   margin-left: 2px;
-   margin-top: 0;
-    padding-top: 0px; 
+    margin-left: 2px;
+    margin-top: 0;
+    padding-top: 0px;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 0;
@@ -69,7 +80,10 @@
     background-color: yellow;
     border-radius: 3px 3px;
 }
+
+
 /* partie Contenue */
+
 .colLeftContent {
     width: 24%;
     margin-left: 1%;
@@ -77,12 +91,14 @@
     margin-top: 15px;
     display: inline-block;
     border-right: solid 1px rgb(218, 214, 214);
-    box-shadow: 2px  rgb(182, 178, 178) ;
+    box-shadow: 2px rgb(182, 178, 178);
     vertical-align: top;
 }
+
 .colLeftContent .titreCol {
     margin-top: 10px;
 }
+
 .titreCol h2 {
     padding-left: 10px;
     padding-bottom: 3px;
@@ -91,6 +107,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border-bottom: yellow solid 3px;
 }
+
 .colLeftContent .actLeft {
     margin-left: 10px;
     margin-right: 10px;
@@ -100,19 +117,25 @@
     height: 190px;
     /* box-sizing: border-box; kich thuoc bang dung width div, cho du text co padding  */
 }
+
 .actLeft img {
-    padding-left : 13px;
+    padding-left: 13px;
     padding-bottom: 0;
 }
+
+
 /* partie  pour Abonnes sous l'image */
+
 .actLeft .acAbonne {
-    background-color:  yellow;
+    background-color: yellow;
     padding: 5px;
     font-weight: bold;
     border-radius: 3px;
     margin-left: 30%;
     margin-right: 30%;
+    /* padding-top: -100px; */
 }
+
 .actLeft p {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -120,19 +143,22 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-.colCenterContent  {
+
+.colCenterContent {
     width: 44%;
     margin-left: 1%;
     display: inline-block;
     margin-top: 15px;
     padding-right: 0.7%;
     border-right: solid 1px rgb(218, 214, 214);
-    box-shadow: 2px  rgb(182, 178, 178) ;
+    box-shadow: 2px rgb(182, 178, 178);
     vertical-align: top;
 }
+
 .colCenterContent .titreCol {
     margin-top: 10px;
 }
+
 .colCenterContent .actCenter {
     margin-left: 10px;
     margin-right: 10px;
@@ -140,12 +166,14 @@
     box-shadow: rgb(182, 178, 178) 2px 2px;
     height: 300px;
 }
+
 .actCenter img {
-    padding-left : 20px;
+    padding-left: 20px;
     padding-right: 10px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
+
 .actCenter p {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -156,6 +184,7 @@
     padding-bottom: 10px;
     margin-top: 0;
 }
+
 .colRightContent {
     width: 25%;
     margin-left: 1%;
@@ -164,6 +193,7 @@
     display: inline-block;
     vertical-align: top;
 }
+
 .colRightContent .titreCol {
     margin-top: 10px;
 }
@@ -175,13 +205,15 @@
     box-shadow: rgb(182, 178, 178) 2px 2px;
     height: 105px;
 }
+
 .actRight img {
-    padding-left : 20px;
+    padding-left: 20px;
     padding-right: 10px;
     padding-bottom: 0;
     margin-bottom: 0;
     float: right;
 }
+
 .actRight p {
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -192,6 +224,7 @@
     padding-top: 2px;
     padding-bottom: 10px;
 }
+
 .colRightContent .formulaire {
     margin-left: 10px;
     margin-right: 10px;
@@ -199,11 +232,13 @@
     background-color: #001840;
     height: 165px;
 }
+
 .formulaire img {
     position: relative;
     padding-left: 25px;
     padding-top: 10px;
 }
+
 .formulaire p {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -212,16 +247,19 @@
     padding: 0px 15px 0px 15px;
     margin-top: 0em;
 }
+
 .formulaire .formule {
     margin-top: 0em;
     padding-top: 0;
     padding-left: 30px;
     padding-right: 10px;
 }
+
 .directRight {
-    margin: 0px ;
+    margin: 0px;
     padding: 0;
 }
+
 h5 {
     margin-left: 15px;
     margin-right: 15px;
@@ -233,25 +271,30 @@ h5 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
 }
+
 .directRight span {
     display: inline-flex;
     padding-right: 5px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
 .actDirectRight {
     margin: 0px 15px 0px 15px;
     padding-left: 15px;
     border: solid 1px rgb(182, 178, 178);
 }
+
 .span2 {
     padding-bottom: 5px;
 }
+
 .footer {
     width: 100%;
     background-color: sandybrown;
     height: 50px;
 }
+
 .basLinks div {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: red;

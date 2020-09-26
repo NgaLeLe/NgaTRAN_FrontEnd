@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Glitch - Create</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style/glitch.css">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Glitch - Create</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/glitch.css">
 </head>
+
 <body>
-    <!-- partir Framework-->
+    <!-- partie navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top w100">
+        <a class="navbar-brand font-weight-bold" href="#">
+            <img src="image_glitch/logiGlitch.png" alt="logo Glitch" srcset="">Glitch
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-5 ">
+                <li class="nav-item mt-2">
+                    <a class="nav-link font-weight-bold" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item ml-2 mt-2">
+                    <a class="nav-link font-weight-bold" href="#">Team</a>
+                </li>
+                <li class="nav-item ml-2 mt-2">
+                    <a class="nav-link font-weight-bold" href="#">Help Center</a>
+                </li>
+                <li class="nav-item ml-2 mt-2">
+                    <a class="nav-link font-weight-bold" href="#">
+                        <img src="image_glitch/imgUpgrade.png" style="width: 15%; margin-top: 0;" srcset=""> Upgrade
+                    </a>
+                </li>
+            </ul>
+            <form class="form-inline my-5 my-lg-0">
+                <button class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search text-success"></i></button>
+            </form>
+            <button class="btn btn-outline-dark my-2 my-sm-0 btn-small font-weight-bold" type="submit">New projet</button>
+            <button class="btn btn-outline-light my-2 my-sm-0 btn-small font-weight-bold" type="submit">
+                <i class="fa fa-user text-dark"> User <i class="fa fa-angle-down"></i> </i>
+                </button>
+        </div>
+    </nav>
+    <!-- partie Framework-->
     <section class="createFramework">
         <div class="container row jusitfy-content-center ">
             <!-- col left-header -->
@@ -18,22 +55,22 @@
                     <p>Build off the most popular JavaScript frameworks.</p>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 pVue fakeCol1">
-                    <img src="image_glitch/vue.png"  style="float:left;"  >
-                    <span >
+                    <img src="image_glitch/vue.png" style="float:left;">
+                    <span>
                         <p>Vue</p>
                         <button type="button" >Remix Vue Starter</button>
                     </span>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 pAngular fakeCol1">
-                    <img src="image_glitch/angular.png" style="float:left;" >
-                    <span >
+                    <img src="image_glitch/angular.png" style="float:left;">
+                    <span>
                         <p>Angular</p>
                         <button type="button" >Remix Angular Starter</button>
                     </span>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 pSvelte fakeCol1">
-                    <img src="image_glitch/svelte.png"  style="float:left;"  >
-                    <span >
+                    <img src="image_glitch/svelte.png" style="float:left;">
+                    <span>
                         <p>Svelte</p>
                         <button type="button" >Remix Svelte Starter</button>
                     </span>
@@ -42,43 +79,43 @@
             <!-- col right-list-framework -->
             <div class="col-xl-9 col-lg-8 col-md-6 row listFrame">
                 <div class="col-xl-4 col-lg-6 col-md-12 pReact">
-                    <img src="image_glitch/react.png" style="float:left;" >
+                    <img src="image_glitch/react.png" style="float:left;">
                     <span>
                         <p>React</p>
                         <button type="button" >Remix React Starter</button>
                     </span>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 pNuxt">
-                    <img src="image_glitch/nuxt.png"  style="float:left;"  >
-                    <span >
+                    <img src="image_glitch/nuxt.png" style="float:left;">
+                    <span>
                         <p>Nuxt</p>
                         <button type="button" >Remix Nuxt Starter</button>
                     </span>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 pVue">
-                    <img src="image_glitch/vue.png"  style="float:left;"  >
-                    <span >
+                    <img src="image_glitch/vue.png" style="float:left;">
+                    <span>
                         <p>Vue</p>
                         <button type="button" >Remix Vue Starter</button>
                     </span>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 pAngular">
-                    <img src="image_glitch/angular.png" style="float:left;" >
-                    <span >
+                    <img src="image_glitch/angular.png" style="float:left;">
+                    <span>
                         <p>Angular</p>
                         <button type="button" >Remix Angular Starter</button>
                     </span>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 pSvelte">
-                    <img src="image_glitch/svelte.png"  style="float:left;"  >
-                    <span >
+                    <img src="image_glitch/svelte.png" style="float:left;">
+                    <span>
                         <p>Svelte</p>
                         <button type="button" >Remix Svelte Starter</button>
                     </span>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-md-12 pEmber">
-                    <img src="image_glitch/ember.png"  style="float:left;"  >
-                    <span >
+                    <img src="image_glitch/ember.png" style="float:left;">
+                    <span>
                         <p>Ember</p>
                         <button type="button" >Remix Ember Starter</button>
                     </span>
@@ -161,9 +198,9 @@
                 </div>
             </div>
         </div>
-    </section> 
+    </section>
     <!-- partie Inspiration Starter -->
-    <section class="inspiration" >
+    <section class="inspiration">
         <p>...or browse starter apps for inspiration</p>
         <div class="container row justify-content-center">
             <div class=" col-md-3 col-sm-6 col-lg pGames">
@@ -183,82 +220,85 @@
                     <img src="image_glitch/iMusic.png">
                     <p>Music</p>
                 </a>
-            </div> 
+            </div>
             <div class=" col-md-3 col-sm-6 col-lg pArt">
                 <a href="#">
                     <img src="image_glitch/iArt.png">
                     <p>Art</p>
                 </a>
-            </div> 
+            </div>
             <div class=" col-md-3 col-sm-6 col-lg pProductivity">
                 <a href="#">
                     <img src="image_glitch/iProductivity.png">
                     <p>Productivity</p>
                 </a>
-            </div> 
+            </div>
             <div class=" col-md-3 col-sm-6 col-lg pHardware">
                 <a href="#">
                     <img src="image_glitch/iHardware.png">
                     <p>Hardware</p>
                 </a>
-            </div> 
+            </div>
             <div class=" col-md-3 col-sm-6 col-lg pBuildingBlock">
                 <a href="#">
                     <img src="image_glitch/iBuilding.png">
                     <p>Building Block</p>
                 </a>
-            </div> 
+            </div>
             <div class=" col-md-3 col-sm-6 col-lg pLearnCode">
                 <a href="#">
                     <img src="image_glitch/iLearnCode.png">
                     <p>Learn to Code</p>
                 </a>
-            </div> 
+            </div>
         </div>
     </section>
-<!-- partie Footer -->
+    <!-- partie Footer -->
     <footer>
         <div class="container row pFooter">
             <div class="col-md-3 col-6 pHeaderGlitch">
-                <h3><img src="image_glitch/iconGlitch.png">
-                    Glitch</h3>
+                <h3><img src="image_glitch/iconGlitch.png"> Glitch
+                </h3>
                 <p>
                     Build fast, full-stack web apps in your browser for free
                 </p>
             </div>
             <div class="col-md-3 col-6 pCompany">
                 <h3>Company</h3>
-             <ul>
+                <ul>
                     <li>About Us</li>
                     <li>Handbook</li>
                     <li>Press</li>
                     <li>Who We Are</li>
                 </ul>
-            
+
             </div>
             <div class="col-md-3 col-6 pCommunity">
                 <h3>Community</h3>
-                 <ul>
+                <ul>
                     <li>Help Center</li>
                     <li>Forum</li>
                     <li>Service Status</li>
                     <li> Legal/Terms</li>
                     <li> Pricing</li>
-                    <li>Report Abuse</li>                    </li>
+                    <li>Report Abuse</li>
+                    </li>
                 </ul>
-                
+
             </div>
             <div class="col-md-3 col-6 pSocial">
                 <h3>Social</h3>
                 <ul>
                     <li>
-                        <a href="#">Facebook&nbsp;
+                        <a href="#" class="text-decoration-none text-dark">Facebook&nbsp;
                         <span class="fa fa-facebook fa-lg fa-fw"></span></a>
                     </li>
                     <li>
-                        <a href="#">Twitter&nbsp;<span class="fa fa-twitter fa-lg fa-fw"></span></a></li>
+                        <a href="#" class="text-decoration-none text-dark">Twitter&nbsp;
+                            <span class="fa fa-twitter fa-lg fa-fw"></span></a></li>
                     <li>
-                        <a href="#">LinkedIn&nbsp;<span class="fa fa-linkedin fa-lg fa-fw"></span></a></li>
+                        <a href="#" class="text-decoration-none text-dark">LinkedIn&nbsp;
+                            <span class="fa fa-linkedin fa-lg fa-fw"></span></a></li>
                     </li>
                 </ul>
             </div>
@@ -266,4 +306,5 @@
     </footer>
 
 </body>
+
 </html>
